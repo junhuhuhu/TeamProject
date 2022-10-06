@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.company.mapper.MemberMapper">
+
+	<insert id="join" parameterType="com.company.command.MemberVO">
+ 	insert into members (email, pw, name, nickName) values(#{email }, #{pw }, #{name }, #{nickName})
+	</insert>
+	
+</mapper>
